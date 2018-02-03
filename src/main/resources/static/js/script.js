@@ -78,7 +78,7 @@ function fillTheTable() {
         },
     
     error : function (jqXHR, textStatus, errorThrown) {
-    	debugger
+    	
 		if (jqXHR.status === 401) { // HTTP Status 401: Unauthorized
 			var preLoginInfo = JSON.stringify({method: 'GET', url: '/'});
 			$.cookie('restsecurity.pre.login.request', preLoginInfo);
