@@ -60,7 +60,7 @@
                 url: '/login'
 
             }).done(function(data, textStatus, jqXHR) {
-               debugger
+               
                         $(".mainDiv").load("/html/main.html",function(){
                             $("#jsCreateM").click(function () {
                                 $("#mainDiv").load("html/CreateMovie.html",function () {
